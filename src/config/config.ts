@@ -1,13 +1,15 @@
-import { CONFIG_DIR } from "../constants.js";
+import { CONFIG_DIR, DEFAULT_CONFIG } from "../constants.js";
 import { promises as fs } from "fs";
 
 export interface Config {
   OPEN_AI_API_KEY: string;
+  ASSETS_DIR: string;
 }
 
 export const loadConfig = async (): Promise<Config> => {
-  const config = await fs.readFile(CONFIG_DIR, "utf8").catch(() => "{}");
-  return JSON.parse(config) as Config;
+  const configJSON = await fs.readFile(CONFIG_DIR, "utf8").catch(() => "{}");
+  const config = JSON.parse(configJSON);
+  return { ...DEFAULT_CONFIG, ...config };
 };
 
 export const saveConfig = async (config: Config) => {
