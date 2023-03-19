@@ -1,5 +1,5 @@
 {
-  "name": "cli-for-me",
+  "name": "fme",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",

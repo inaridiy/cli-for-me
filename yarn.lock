@@ -131,21 +131,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-for-me@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "cli-for-me@workspace:."
-  dependencies:
-    "@tsconfig/node-lts-strictest-esm": ^18.12.1
-    "@types/fs-extra": ^11.0.1
-    "@types/inquirer": ^9.0.3
-    "@types/node": ^18.15.3
-    commander: ^10.0.0
-    fs-extra: ^11.1.0
-    inquirer: ^9.1.5
-    typescript: ^5.0.2
-  languageName: unknown
-  linkType: soft
-
 "cli-spinners@npm:^2.6.1":
   version: 2.7.0
   resolution: "cli-spinners@npm:2.7.0"
@@ -224,6 +209,21 @@ __metadata:
   checksum: e6e8b6d1df2f554d4effae4a5ceff5d796f9449f6d4e912d74dab7d5f25916ecda6c305b9084833157d56485a0c78b37164430ddc5675bcee1330e346710669e
   languageName: node
   linkType: hard
+
+"fme@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "fme@workspace:."
+  dependencies:
+    "@tsconfig/node-lts-strictest-esm": ^18.12.1
+    "@types/fs-extra": ^11.0.1
+    "@types/inquirer": ^9.0.3
+    "@types/node": ^18.15.3
+    commander: ^10.0.0
+    fs-extra: ^11.1.0
+    inquirer: ^9.1.5
+    typescript: ^5.0.2
+  languageName: unknown
+  linkType: soft
 
 "fs-extra@npm:^11.1.0":
   version: 11.1.0
