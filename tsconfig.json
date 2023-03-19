@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node-lts-strictest-esm",
+  "compilerOptions": {
+    "ignoreDeprecations": "5.0", //消したいが、ts basesの関係で無理
+    "outDir": "dist",
+    "baseUrl": ".",
+    "declaration": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
